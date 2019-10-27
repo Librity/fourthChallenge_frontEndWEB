@@ -1,7 +1,28 @@
-.header {
-  padding: 60px;
-  text-align: center;
+div.header {
+  position: sticky;
+  padding: 3%;
   background: #4a90e2;
   color: white;
-  font-size: 30px;
+}
+
+img.facebookLogo {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  padding-top: 0%;
+  width: 11%;
+}
+
+img.profileLogo {
+  position: absolute;
+  width: 2.2%;
+  top: 29%;
+  right: 2%;
+}
+
+h4.profile{
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 120%;
 }
