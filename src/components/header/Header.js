@@ -8,10 +8,16 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
-      <div class="header">
-        <img src={facebookLogo} class="facebookLogo" />
-        <h4 class="profile">My Profile</h4>
-        <img src={profileLogo} class="profileLogo" />
+      <div className="header">
+        <a href="https://www.facebook.com/" target="_blank" className="logo">
+          <img src={facebookLogo} className="facebookLogo" />
+        </a>
+        <div className="header-right">
+          <a href="https://www.facebook.com/login/" target="_blank">My Profile</a>
+          <a href="https://www.facebook.com/login/" target="_blank">
+            <img src={profileLogo} />
+          </a>
+        </div>
       </div>
     );
   }
