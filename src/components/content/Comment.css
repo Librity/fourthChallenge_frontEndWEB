@@ -1,6 +1,19 @@
 div.comment_body {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+
+li.comment_avatar{
+  margin-right: 10px;
+}
+
+div.comment_bubble{
+  display: flex;
+  flex-direction: column;
   background: #eeeeee;
   border-radius: 20px;
+  padding: 10px;
 }
 
 li.comment_author_name {
@@ -14,4 +27,5 @@ li.comment_author_content {
   font-size: 13px;
   line-height: 20px;
   color: #3e3e3e;
+  word-wrap: break-word;
 }

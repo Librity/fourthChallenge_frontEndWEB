@@ -1,7 +1,13 @@
-body {
-  background-color: #f2f2f2;
-  color: #4b4b4b;
-  font-family: Tahoma;
-  margin: 0;
+* {
+  list-style-type: none;
 }
 
+body {
+  background-color: #f2f2f2;
+  font-family: Tahoma;
+  margin: 0;
+  direction: ltr;
+  line-height: 1.34;
+  padding: 0;
+  unicode-bidi: embed;
+}

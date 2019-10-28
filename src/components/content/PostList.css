@@ -1,0 +1,6 @@
+ul.post_list {
+  margin: 30px auto 0;
+  max-width: 100%;
+  width: 80%;
+  align-items: center;
+}

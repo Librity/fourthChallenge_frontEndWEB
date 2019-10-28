@@ -123,13 +123,73 @@ class PostList extends Component {
           },
         ],
       },
+      {
+        id: 2,
+        author: {
+          name: 'Gabriel Lisboa',
+          avatar: avatar_gabriel,
+        },
+        date: '04 Jun 2019',
+        content:
+          'Fala galera, beleza?\n\nEstou fazendo o Bootcamp GoStack da Rocketseat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação para trocarmos uma ideia.',
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: 'Clara Lisboa',
+              avatar: avatar_clara,
+            },
+            content:
+              'Também estou fazendo o Bootcamp e estou adorando! Estou no terceiro módulo sobre Node e já tenho minha API dos desafios contruída!',
+          },
+          {
+            id: 2,
+            author: {
+              name: 'Cézar Toledo',
+              avatar: avatar_cezar,
+            },
+            content:
+              'Que maaaaassa! Estou pensando em me inscrever na próxima turma pra ver qual é desse Bootcamp GoStack, dizem que os devs saem de lá com super poderes!',
+          },
+        ],
+      },
+      {
+        id: 2,
+        author: {
+          name: 'Gabriel Lisboa',
+          avatar: avatar_gabriel,
+        },
+        date: '04 Jun 2019',
+        content:
+          'Fala galera, beleza?\n\nEstou fazendo o Bootcamp GoStack da Rocketseat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação para trocarmos uma ideia.',
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: 'Clara Lisboa',
+              avatar: avatar_clara,
+            },
+            content:
+              'Também estou fazendo o Bootcamp e estou adorando! Estou no terceiro módulo sobre Node e já tenho minha API dos desafios contruída!',
+          },
+          {
+            id: 2,
+            author: {
+              name: 'Cézar Toledo',
+              avatar: avatar_cezar,
+            },
+            content:
+              'Que maaaaassa! Estou pensando em me inscrever na próxima turma pra ver qual é desse Bootcamp GoStack, dizem que os devs saem de lá com super poderes!',
+          },
+        ],
+      },
     ],
   };
 
   render() {
     return (
       <>
-        <ul>
+        <ul className="post_list">
           {this.state.posts.map(post => (
             <Post key={post.id} data={post} />
           ))}
